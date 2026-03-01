@@ -1,0 +1,12 @@
+{
+    "display_name": "Reproductive Tracker",
+    "loading_order": 1,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Domineza",
+    "version": "2.1.0",
+    "homePage": "https://github.com/domineza1299-create/reproductive-tracker",
+    "auto_update": true
+}

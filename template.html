@@ -1,0 +1,50 @@
+<div id="repro-settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>♀ Репродуктивный трекер</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <label class="checkbox_label">
+                <input type="checkbox" id="rpt_enabled" checked />
+                <span>Включить трекер</span>
+            </label>
+            <label class="checkbox_label">
+                <input type="checkbox" id="rpt_showInChat" checked />
+                <span>Блок в чате</span>
+            </label>
+            <hr />
+            <small>📅 День цикла: <b id="rpt_day_val">1</b></small>
+            <input type="range" id="rpt_day" min="1" max="35" value="1" />
+            <small>Длина цикла: <b id="rpt_len_val">28</b></small>
+            <input type="range" id="rpt_len" min="21" max="35" value="28" />
+            <small>💊 Контрацепция:</small>
+            <select id="rpt_contra">
+                <option value="none">❌ Нет</option>
+                <option value="condom">🟡 Презерватив (85%)</option>
+                <option value="pill">💊 ОК (91%)</option>
+                <option value="iud">🔵 Спираль (99%)</option>
+                <option value="implant">🟢 Имплант (99.5%)</option>
+            </select>
+            <hr />
+            <small>🔥 Возбуждение: <b id="rpt_ar_val">0</b>%</small>
+            <input type="range" id="rpt_ar" min="0" max="100" value="0" />
+            <small>💋 Базовое либидо: <b id="rpt_bl_val">50</b></small>
+            <input type="range" id="rpt_bl" min="10" max="90" value="50" />
+            <hr />
+            <label class="checkbox_label">
+                <input type="checkbox" id="rpt_pregnant" />
+                <span>🤰 Режим беременности</span>
+            </label>
+            <small>Неделя: <b id="rpt_wk_val">0</b></small>
+            <input type="range" id="rpt_wk" min="0" max="40" value="0" />
+            <hr />
+            <div style="display:flex;gap:4px;margin-bottom:4px">
+                <div class="menu_button" id="rpt_btn_p1">+1 день</div>
+                <div class="menu_button" id="rpt_btn_p7">+7 дней</div>
+                <div class="menu_button" id="rpt_btn_p28">+1 месяц</div>
+            </div>
+            <div class="menu_button" id="rpt_btn_reset" style="color:#e94560;border-color:#e94560">🔄 Сбросить</div>
+        </div>
+    </div>
+</div>
